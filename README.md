@@ -1,6 +1,4 @@
-# Swag Labs E2E Test
-
-Автоматизированный E2E тест для проверки процесса покупки на сайте [Swag Labs](https://www.saucedemo.com/) с использованием Python и Selenium.
+# TPO auto tests
 
 ## Предварительные требования
 
@@ -12,14 +10,13 @@
 Клонирем репозиторий
 
 ```bash
-git clone https://github.com/yourusername/swag-labs-test.git
-cd swag-labs-test
+git clone https://github.com/ElishaFlacon/top3kurs6lr.git .
 ```
 
 Создаем .env
 
 ```bash
-cp .env.example .env
+cp .env-example .env
 ```
 
 Создаем виртуальное окружение
@@ -47,7 +44,7 @@ pytest -v test_swag_labs.py
 
 Запускаем скрипт для теста github
 ```bash
-pytest -v test_swag_labs.py
+pytest -v test_github_repos.py
 ```
 
 Запускаем скрипт для теста lb4
