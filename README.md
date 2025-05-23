@@ -42,10 +42,20 @@ pip install -r requirements.txt
 
 Запускаем скрипт для теста swaglabs
 ```bash
-python test_swag_labs.py
+pytest -v test_swag_labs.py
 ```
 
 Запускаем скрипт для теста github
 ```bash
-python test_swag_labs.py
+pytest -v test_swag_labs.py
+```
+
+Запускаем скрипт для теста lb4
+```bash
+pytest -v other/lb4.py
+```
+
+Запускаем скрипт для теста lb5
+```bash
+pytest -v other/lb5.py
 ```

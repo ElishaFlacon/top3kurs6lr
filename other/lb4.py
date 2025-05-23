@@ -23,13 +23,10 @@ REGISTRATION_LINK_XPATH = '/html/body/esia-root/div/esia-login/div/div[2]/button
 @pytest.fixture
 def driver():
     driver = webdriver.Chrome()
+    driver.get('https://esia.gosuslugi.ru/login')
     driver.maximize_window()
     yield driver
     driver.quit()
-
-
-def test_driver_start(driver):
-    driver.get('https://esia.gosuslugi.ru/login')
 
 
 def test_successful_login(driver):
